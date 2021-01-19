@@ -1,5 +1,8 @@
 # quiz
 Trabalho individual de LIMA para fechamento do primeiro semestre do curso desenvolvimento de sistemas do SENAI
+# Jogo de perguntas da Netflix:
+Acesse ao link e divirta-se 
+[Perguntas e respostas](https://anacarolinaoliveira23.github.io/quiz//LIMA-JOGO/).
 
 # Wireframe:
 Wireframe desse projeto considera não apenas computadores, mas também dispositivos moveis 
