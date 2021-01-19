@@ -1,0 +1,112 @@
+ html, body {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap; 
+  background-image: url("/imagens/netflix.png"); 
+  padding: 0%;
+  margin: 0%;
+  width: 100%;
+  height: 100%; 
+ 
+   /* } pra deixar a pagina estatica */ 
+ }
+    
+
+
+/* Css do flip card */
+.flip-card {
+    background-color: transparent;
+    margin: 5.5%;
+    width: 450px;
+    height: 350px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    box-shadow: rgb(255, 255, 255) 5px 4px 4px;
+  }
+  .flip-card-interior {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-interior {
+    transform: rotateY(180deg);
+  }
+  .flip-card-frente, .flip-card-verso {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  .flip-card-frente {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  
+  .flip-card-verso {
+    background-color: rgb(102, 7, 7);
+    color: white;
+    transform: rotateY(180deg);
+    font-family: 'Domine', serif;
+  }
+
+   h1, p {
+    color: white;
+  }    
+  .titulo {
+    color: white ;
+    margin:0;
+    width: 100%; 
+    text-align: center; 
+    margin-top: 10%;
+    text-shadow: white;
+    text-shadow: 4px 4px 8px red; 
+    font-family: 'Domine', serif;
+    }
+   
+
+    
+ .respostas:hover{
+
+  background-color: rgb(255, 0, 0);
+}
+
+.score {
+  position: absolute;
+  color: whitesmoke;
+  border-radius: 5%;
+  background-color: rgb(102, 7, 7);
+  height:4%;
+  width: 39%;
+  margin-left: 1%;
+  text-align: center;
+  box-shadow: rgb(255, 255, 255) 5px 4px 4px;
+}
+.score_segundo{
+  position: absolute;
+  color: whitesmoke;
+  border-radius: 5%;
+  background-color: rgb(102, 7, 7);
+  height:5%;
+  width: 28%;
+  margin-left: 70%;
+  text-align: center;
+  box-shadow: rgb(255, 255, 255) 5px 4px 4px;
+}
+
+#respostas {
+  position: static;
+  width: 25%;
+  height:8%;
+  margin-left: 38%;
+  background-color: rgb(102, 7, 7);
+  color: white;
+  border-radius: 10%;
+  font-family: 'Domine', serif;
+  box-shadow: rgb(255, 255, 255) 5px 4px 4px;
+
+}
