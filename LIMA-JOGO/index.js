@@ -118,7 +118,7 @@ let pontuacao;
 
       pontuacao = score[0] + score[1] + score[2] + score[3] + score[4] + score[5]+ score[6]+ score[7]+ score[8]+ score[9] ;
       localStorage.setItem("pontuacao", pontuacao)
-      let a = localStorage.getItem("soma");
+      let a = localStorage.getItem("pontuacao");
 
       if(localStorage.getItem("pontuacao") > a) {
 
