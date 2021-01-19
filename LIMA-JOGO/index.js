@@ -13,7 +13,7 @@ function verifica_resposta() {
     
 
 let score = new Array(10);
-let soma;
+let pontuacao;
 
 
     if(respostas[0] == true ){
@@ -116,19 +116,19 @@ let soma;
         document.getElementById("resposta10").textContent = "✖️"
       }
 
-      soma = score[0] + score[1] + score[2] + score[3] + score[4] + score[5]+ score[6]+ score[7]+ score[8]+ score[9] ;
-      localStorage.setItem("soma", soma)
+      pontuacao = score[0] + score[1] + score[2] + score[3] + score[4] + score[5]+ score[6]+ score[7]+ score[8]+ score[9] ;
+      localStorage.setItem("pontuacao", pontuacao)
       let a = localStorage.getItem("soma");
 
-      if(localStorage.getItem("soma") > a) {
+      if(localStorage.getItem("pontuacao") > a) {
 
-        document.getElementById("saida01").textContent = localStorage.getItem("soma") + " de 1000"
-        document.textContent("saida_segunda").textContent = localStorage.getItem("soma")
+        document.getElementById("saida_score").textContent = localStorage.getItem("pontuacao") + " de 1000"
+        document.textContent("saida_recorde").textContent = localStorage.getItem("pontuacao")
       }
       else{
       
-        document.getElementById("saida01").textContent = localStorage.getItem("soma") + " de 1000"
-        document.getElementById("saida_segunda").textContent = a;
+        document.getElementById("saida_score").textContent = localStorage.getItem("pontuacao") + " de 1000"
+        document.getElementById("saida_recorde").textContent = a;
       }
       
 }
